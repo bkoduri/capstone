@@ -1,0 +1,169 @@
+body {
+  background: #eae5e5 !important;
+  color: brown;
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #331e28;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ef7f8e;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+h1 {
+  color: darkgreen;
+  font-style: italic;
+}
+h5 {
+  color: black;
+  font-weight: bold;
+}
+.footer {
+     background-color: red;
+     color: white;
+     padding: 5px;
+     text-align: center;
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+ }
+#endline {
+  text-align: center;
+  color: green;
+  font-style: oblique;
+  background-color: silver;
+}
+.table td {
+  background-color: beige !important;
+  color: black !important;
+}
+/* Login page css from copilot */
+
+
+#login {
+  padding: 3em;
+}
+
+html,
+body,
+.container-table {
+  height: 100%;
+
+}
+.container-table {
+  display: table;
+  color: white;
+}
+.vertical-center-row {
+  display: table-cell;
+  vertical-align: middle;
+}
+.vertical-20p {
+  padding-top: 20%;
+}
+.vertical-10p {
+  padding-top: 10%;
+}
+.vertical-5p {
+  padding-top: 5%;
+}
+.logo {
+  width: 15em;
+  padding: 3em;
+}
+
+.input-group {
+  padding-bottom: 2em;
+  height: 4em;
+  width: 100%;
+}
+
+.input-group span.input-group-addon {
+  width: 2em;
+  height: 4em;
+}
+
+@media (max-width: 1241px) {
+  .input-group input {
+    height: 4em;
+  }
+}
+@media (min-width: 1242px) {
+  form {
+    padding-left: 20em;
+    padding-right: 20em;
+  }
+
+  .input-group input {
+    height: 6em;
+  }
+}
+
+.input-group-addon i {
+  height: 15px;
+  width: 15px;
+}
+
+  /** Tablesort plugin from http://tristen.ca/tablesort/demo/ **/
+
+  th[role=columnheader]:not(.no-sort) {
+  	cursor: pointer;
+  }
+
+  th[role=columnheader]:not(.no-sort):after {
+  	content: '';
+  	float: right;
+  	margin-top: 7px;
+  	border-width: 0 4px 4px;
+  	border-style: solid;
+  	border-color: #404040 transparent;
+  	visibility: hidden;
+  	opacity: 0;
+  	-ms-user-select: none;
+  	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	user-select: none;
+  }
+
+  th[aria-sort=ascending]:not(.no-sort):after {
+  	border-bottom: none;
+  	border-width: 4px 4px 0;
+  }
+
+  th[aria-sort]:not(.no-sort):after {
+  	visibility: visible;
+  	opacity: 0.4;
+  }
+
+  th[role=columnheader]:not(.no-sort):hover:after {
+  	visibility: visible;
+  	opacity: 1;
+  }

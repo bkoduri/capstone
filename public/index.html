@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <title>Cummins Customer Home Page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+  <body>
+
+    <div class="sidenav">
+      <img src ="http://www.inrd.com/images/logos/Logo_wordmark_ext_red.png" width="200"> <br>
+      <a href="./index.html">About</a>
+      <a href="./service.html">Service History</a>
+      <a href="./engine.html">Engine Performance</a>
+      <a href="#" target="popup" onclick="window.open('https://console.dialogflow.com/api-client/demo/embedded/cc157519-40e6-4e8b-8a8d-00977de29e28','name','width=500,height=600')">Contact Support</a><br>
+      <!-- <img src ="http://inrd.indianarailroads.org/inrd4005.jpg" width="200"> -->
+      <a style="padding:0px" target="_blank" href="https://tmvcontrol.com/wp/wp-content/uploads/2016/11/Cw1QYBCUAAATx0Z-1024x768.jpg"> <img src ="https://tmvcontrol.com/wp/wp-content/uploads/2016/11/Cw1QYBCUAAATx0Z-1024x768.jpg" width="200"></a>
+  </div>
+
+
+
+    <main id="clientApp" class="container-fluid">
+      <div class="main">
+      <h1>Welcome to Cummins Monitoring Dashboard!</h1>
+      <h3>Track your engine performance on this website.</h3>
+      <br>
+      <h5>Your organization details</h5> <br>
+      <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th>Org ID</th>
+        <th>Org Name</th>
+        <th>Description</th>
+        <th>Industry</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>4</td>
+        <td>Indiana Rail Road</td>
+        <td>The Indiana Railroad is a Class 2 Railroad serving areas of the midwest</td>
+        <td>Rail</td>
+      </tr>
+    </tbody>
+  </table>
+      <br>
+      <h5>Your Point of Contact</h5>
+      <br>
+      <table class="table table-bordered">
+      <thead class="thead-dark">
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Zip</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Jan Levinson-Gould</td>
+        <td>99 Creek Rd</td>
+        <td>Bloomington, IN</td>
+        <td>47402</td>
+      </tr>
+      </tbody>
+      </table>
+      <br> <h5>Products Deployed at Indiana Railroad </h5>
+
+      <table class="table table-bordered">
+      <thead class="thead-dark">
+      <tr>
+        <th>Product Deployed ID</th>
+        <th>Product Name</th>
+        <th>Machine ID</th>
+        <th>Machine Name</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1</td>
+        <td>X15 Efficiency Series</td>
+        <td>QXZ12R</td>
+        <td>Train</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>QSK95</td>
+        <td>1DLX92</td>
+        <td>Train</td>
+      </tr>
+      </tbody>
+      </table>
+
+  </div>
+
+</main> <!--End row1 high level summary-->
+<br><br>
+<div class="footer">
+  <h6>Cummins Inc - Columbus IN</h6>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/clientApp.js"></script>
+<!-- Table sort scripts -->
+<script src="js/tablesort.min.js"></script>
+<script>
+    /** tablesort plugin from http://tristen.ca/tablesort/demo/ **/
+    new Tablesort(document.getElementById('sortableTable'));
+</script>
+</body>
+</html>
